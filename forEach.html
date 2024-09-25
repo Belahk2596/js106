@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numbers = [1, 2, 3]; //initialzing an array to use
+      let total = 0; //initializing a 'counter' to start our index of the array.
+      numbers.forEach(function(num) {console.log(num)}); //uses the forEach function on the numbers array.
+      //the function inside is a an anonymouos function that takes 'num' as a parameter and uses that for EACH of the elements in the array.
+      let totalTwo = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+      //totalTwo STORES the result of the reduce() method being used on the numbers array. Should output 6 on the console give it a try and play around with elements of the array.
+      console.log(totalTwo) //logs the total of the array. 
+      
+    </script>
+  </body>
+</html>

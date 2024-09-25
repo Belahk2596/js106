@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('find method') //not important
+        const arr = [5, 8, 12, 20, 1, 0, 4];
+        let john = arr.find((number) => number > 10); //find method finds the FIRST element in the array that is GREATER than 10.
+        console.log(john); //logs the FIRST element in the array that was greater than 10
+        console.log('reverse order')
+        let lisa = arr.reverse(); //the reverse method obviously reverses the order of the array
+        console.log(lisa); //logs the reversed array to the console
+        console.log('ascending order sorting')
+        arr.sort((a, b) => a - b); //sort method sorts array in a ascending order like 1 - 10 for example
+        console.log(arr); //logs new order of array
+        console.log('descending order sorting')
+        arr.sort((a, b) => b - a);// same sorting method as above but in a descending order 10 - 1 for example
+        console.log(arr);//logs new order of array
+        const positive = arr.every(number => number > 0); //every method in this case checks every element to see if they are a positive number. Any number above '0' is a positive number
+        console.log(positive); //should return false because there IS a '0' in the array
+        const arrayOne = [1,2] //initializing a new array to use with the concat() method
+        const newArray = arrayOne.concat([3,4]); //uses the concat() method to merge two arrays together
+        console.log(newArray); //logs the result of the two arrays merged
+        const arrTwo = [1,2,3] //initializing a new array 
+        const total = arrTwo.reduce((accu, curr) => accu + (curr * curr), 0); //accu = accumulator, curr = currentValue
+        console.log(total) //logs the total of all elements in the array to the console. 
+        /* the reduce() method adds all elements in an array together and stores its total value in a variable. */ 
+    </script>
+</body>
+</html>
